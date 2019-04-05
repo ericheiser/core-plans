@@ -43,7 +43,7 @@ create_windows_verify_pipeline_for() {
   ######################################################
   # "Windows pipelines are currently not implemented." #
   ######################################################
-  # sed -i "|@@plan@@|$plan|" .buildkite/templates/verify_windows_pipeline.yml
+  sed -i "|@@plan@@|$plan|" .buildkite/templates/verify_windows_pipeline.yml
 }
 
 # If there were more than 10 plans affected by a change we're not going to run any verify builds
